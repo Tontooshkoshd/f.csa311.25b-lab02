@@ -1,16 +1,11 @@
 package edu.cmu.cs.cs214.lab02;
 
-import edu.cmu.cs.cs214.lab02.shapes.*;
+import edu.cmu.cs.cs214.lab02.shapes.Shape;
 
 public class Renderer {
-    public Rectangle rectangle;
-    
-    Renderer(Rectangle rectangle) {
-        this.rectangle = rectangle;
-    }
-
-    void draw() {
-        double area = rectangle.getArea();
+    // Encapsulation: depend on Shape behavior, not concrete fields/types.
+    public void draw(Shape shape) {
+        double area = shape.getArea();
 
         // assume implementation
 
