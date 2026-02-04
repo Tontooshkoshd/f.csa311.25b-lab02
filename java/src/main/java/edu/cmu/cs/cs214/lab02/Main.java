@@ -5,13 +5,13 @@ import edu.cmu.cs.cs214.lab02.shapes.Shape;
 
 public class Main {
     public static void main(String[] args) {
-        // Use the interface type to avoid depending on a concrete shape.
+        // Интерфэйс төрлийг ашигласнаар тодорхой дүрсээс хамаарахгүй.
         Shape shape = new Rectangle(2, 3);
 
-        // Renderer no longer stores a specific shape; it renders any Shape.
+        // Renderer тодорхой дүрс хадгалахгүй; дурын Shape-ийг дүрслэнэ.
         Renderer renderer = new Renderer();
 
-        // Render via interface behavior (getArea), not concrete fields.
+        // Тодорхой өгөгдөл бус, интерфэйсийн зан төлөвөөр (getArea) дүрслэнэ.
         renderer.draw(shape);
     }
 }

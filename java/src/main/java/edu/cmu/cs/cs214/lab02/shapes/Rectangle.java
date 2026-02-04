@@ -1,7 +1,7 @@
 package edu.cmu.cs.cs214.lab02.shapes;
 
 public class Rectangle implements Shape {
-    // Encapsulation: hide internal dimensions; expose only via behavior.
+    // Битүүмжлэл: дотоод хэмжээсийг нууж, зөвхөн зан төлөвөөр ил гаргана.
     private final double height;
     private final double width;
     

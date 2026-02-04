@@ -3,7 +3,7 @@ package edu.cmu.cs.cs214.lab02;
 import edu.cmu.cs.cs214.lab02.shapes.Shape;
 
 public class Renderer {
-    // Encapsulation: depend on Shape behavior, not concrete fields/types.
+    // Битүүмжлэл: тодорхой класс/өгөгдлөөс биш, Shape-ын зан төлөвөөс хамаарна.
     public void draw(Shape shape) {
         double area = shape.getArea();
 
